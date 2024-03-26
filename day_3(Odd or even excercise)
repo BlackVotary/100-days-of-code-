@@ -1,0 +1,6 @@
+random_number = int(input("input a random number: "))
+operation = random_number % 2
+if operation == 0:
+    print("This is an even number")
+else:
+    print("This is an odd number")

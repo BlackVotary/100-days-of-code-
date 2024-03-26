@@ -1,0 +1,4 @@
+#This line of prints out the number of character in an input
+
+name = input("what is your name?: ")
+print(len(name))

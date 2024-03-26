@@ -1,0 +1,18 @@
+#This code calculate the BMI of a user
+name = input("Enter user name: ")
+weight = int(input("Enter user weight: "))
+height = float(input("Enter user height: "))
+operation = BMI = round(weight / height ** 2, 2)
+print(f"Your BMI is {BMI}")
+if BMI < 18.5:
+    print ("Dear" +" "+ name +"," " You are UNDERWEIGHT")
+elif BMI > 18.5 and BMI < 25:
+    print("Dear" +" "+ name +"," " You have a NORMAL WEIGHT")
+elif BMI > 25 and BMI <30:
+    print("Dear" +" "+ name +"," " You are OVERWEIGHT")
+elif BMI > 30 and BMI <35:
+    print("Dear" +" "+ name +"," " You are OBESE")
+elif BMI > 35:
+    print("Dear" +" "+ name +"," " You are CLINICALLY OBESE")
+else:
+    print("Your information is not readable")

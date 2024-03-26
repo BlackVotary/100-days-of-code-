@@ -1,0 +1,21 @@
+#This piece of code indicates if a given year is a normal year or a leap year
+
+year = int(input("Enter year: "))
+
+#operations
+A = (year % 4)
+B = (year % 100)
+C = (year % 400)
+
+if A == 0:
+    print(f"{year} is a leap year")
+    if B == 0:
+        print(f"{year} is not a leap year")
+        if C == 0:
+            print (f"{year} is a leap year")
+        else:
+            print(f"{year} is not a leap year")
+    else:
+        print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")

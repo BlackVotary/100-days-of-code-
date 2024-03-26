@@ -1,0 +1,22 @@
+#number of days we have in a year is represented by letter D
+#Number of Months we have in a year is represented by M
+#Number of weeks we have in a year is represented by W
+#numbers of years we have to live is represented by (n)
+D=365
+M=12
+W=52
+n=90
+days_in_90_years = D90 = int(n * D)
+Months_in_90_years = M90 = int(n * M)
+weeks_in_90_years = W90 = int(n * W)
+#Present age is represented by letter P
+P= int(input("Insert your present age: "))
+#Months left is signigied by ML
+#Days left signified by DL
+#Weeks left is signified by WL
+ML = int(M90) - int(M * P)
+WL = int(W90) - int(W * P)
+DL = int(D90) - int(D * P)
+#number of years left is represented by YL
+YL = 90 - P
+print (f"You have {YL} years, {ML} months,{WL} weeks, and {DL} days left.")
