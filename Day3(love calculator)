@@ -1,0 +1,28 @@
+print("Welcome to the love calculator")
+name1=input("Type in your name\n: ").lower()
+name2=input("Type in your partner's name\n: ").lower()
+
+word1="true"
+word2="love"
+
+YP = (name1 + name2)
+true_count = YP.count("t") + YP.count("r") + YP.count("u") + YP.count("e")
+love_count = YP.count("l") + YP.count("o") + YP.count("v") + YP.count("e")
+
+love_score = int(f"{true_count}{love_count}")
+
+if love_score < 10 or love_score > 90:
+    print (f"Your score is {love_score}, you go together like coke and mentos")
+elif love_score >= 40 and love_score <= 50:
+    print(f"Your score is {love_score}, you go well together")
+else:
+    print(f"Your score is {love_score}")
+
+
+
+
+
+
+
+
+

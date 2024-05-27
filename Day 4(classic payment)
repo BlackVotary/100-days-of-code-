@@ -1,0 +1,7 @@
+import random
+name_string = input("Enter names seperated by (,)\n: ")
+names = name_string.split(", ")
+num = (len(names))
+random_choice = random.randint(0, int(num-1))
+winner = (names[random_choice])
+print(f"Congratulations {winner}, you will be paying for our food today.")

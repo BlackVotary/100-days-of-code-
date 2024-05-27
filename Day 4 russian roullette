@@ -1,0 +1,8 @@
+# Split string method
+import random
+name_string = input ("Give me everybody'ss name sseperated by a comma.\n: ")
+names = name_string.split(",")
+number_of_items = len(names)
+random_space = random.randint(0,number_of_items -1)
+payer = (names[random_space])
+print (f"{payer} is buying our meals today")
